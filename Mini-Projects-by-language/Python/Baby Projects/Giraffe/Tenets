@@ -1,0 +1,37 @@
+
+[programming is about data analysis,  data transformation, and data generation]
+
+every program must do output
+- write data to a file
+- send data over a network
+- send data to a screen for display
+- send data to an audio device for playback
+- etc.
+
+most programs also do input
+- read data from a file
+- receive data over a network
+- receive data from a mouse, keyboard, or other human input device
+- etc.
+
+
+
+[data comes in difference types]
+# 1: strings ("plain text" aka sequences of text characters)
+# 2: numbers (integers, real numbers, et al.)
+# 3: booleans ( true or false)
+# 4: collections (values made up of multiple other values)
+
+
+
+[every programming languages...]
+- built-in operations
+- variables
+- branching (if statements)
+- looping (while / for statements)
+- functions (programmer-defined operations)
+- ...what about input/output?
+
+
+
+
