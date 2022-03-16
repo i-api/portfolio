@@ -1,0 +1,491 @@
+tim@Tim-Macbook-Air-M1 HerokuSeleniumPythonScript % git add .
+tim@Tim-Macbook-Air-M1 HerokuSeleniumPythonScript % git commit -am "fixed get_confirmation_div_text by finding using XPATH rather than CSS Selector"
+[master 4115628] fixed get_confirmation_div_text by finding using XPATH rather than CSS Selector
+ Committer: Tim <tim@Tim-Macbook-Air-M1.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+tim@Tim-Macbook-Air-M1 HerokuSeleniumPythonScript % git push heroku master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 2.10 MiB | 3.89 MiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Building on the Heroku-20 stack
+remote: -----> Using buildpacks:
+remote:        1. heroku/python
+remote:        2. https://github.com/heroku/heroku-buildpack-google-chrome
+remote:        3. https://github.com/heroku/heroku-buildpack-chromedriver
+remote: -----> Python app detected
+remote: -----> No Python version was specified. Using the same version as the last build: python-3.9.10
+remote:        To use a different version, see: https://devcenter.heroku.com/articles/python-runtimes
+remote: -----> No change in requirements detected, installing from cache
+remote: -----> Using cached install of python-3.9.10
+remote: -----> Installing pip 21.3.1, setuptools 57.5.0 and wheel 0.37.0
+remote: -----> Installing SQLite3
+remote: -----> Installing requirements with pip
+remote: -----> Google Chrome app detected
+remote: -----> Installing Google Chrome from the stable channel.
+remote: -----> Updating apt caches
+remote:        Get:1 http://apt.postgresql.org/pub/repos/apt focal-pgdg InRelease [86.6 kB]
+remote:        Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+remote:        Get:3 http://archive.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+remote:        Get:4 http://apt.postgresql.org/pub/repos/apt focal-pgdg/main amd64 Packages [365 kB]
+remote:        Get:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+remote:        Get:6 http://archive.ubuntu.com/ubuntu focal-security/main amd64 Packages [1,646 kB]
+remote:        Get:7 http://archive.ubuntu.com/ubuntu focal-security/universe amd64 Packages [859 kB]
+remote:        Get:8 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,142 kB]
+remote:        Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2,060 kB]
+remote:        Fetched 6,386 kB in 1s (5,125 kB/s)
+remote:        Reading package lists...
+remote: -----> Fetching .debs for gconf-service
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          gconf-service-backend gconf2-common libdbus-glib-1-2 libgconf-2-4
+remote:        The following NEW packages will be installed:
+remote:          gconf-service gconf-service-backend gconf2-common libdbus-glib-1-2
+remote:          libgconf-2-4
+remote:        0 upgraded, 5 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/918 kB of archives.
+remote:        After this operation, 8,309 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libappindicator1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          adwaita-icon-theme gtk-update-icon-cache humanity-icon-theme libatk1.0-0
+remote:          libatk1.0-data libdbusmenu-glib4 libdbusmenu-gtk4 libgail-common libgail18
+remote:          libgtk2.0-0 libgtk2.0-bin libgtk2.0-common libxcomposite1 libxcursor1
+remote:          libxdamage1 libxfixes3 libxi6 libxinerama1 libxrandr2 ubuntu-mono
+remote:        Suggested packages:
+remote:          indicator-application gvfs
+remote:        The following NEW packages will be installed:
+remote:          adwaita-icon-theme gtk-update-icon-cache humanity-icon-theme
+remote:          libappindicator1 libatk1.0-0 libatk1.0-data libdbusmenu-glib4
+remote:          libdbusmenu-gtk4 libgail-common libgail18 libgtk2.0-0 libgtk2.0-bin
+remote:          libgtk2.0-common libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6
+remote:          libxinerama1 libxrandr2 ubuntu-mono
+remote:        0 upgraded, 21 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 28.8 kB/7,162 kB of archives.
+remote:        After this operation, 40.4 MB of additional disk space will be used.
+remote:        Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 gtk-update-icon-cache amd64 3.24.20-0ubuntu1.1 [28.8 kB]
+remote:        Fetched 28.8 kB in 0s (118 kB/s)
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libasound2
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          alsa-topology-conf alsa-ucm-conf libasound2-data
+remote:        Suggested packages:
+remote:          libasound2-plugins alsa-utils
+remote:        The following NEW packages will be installed:
+remote:          alsa-topology-conf alsa-ucm-conf libasound2 libasound2-data
+remote:        0 upgraded, 4 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 27.1 kB/389 kB of archives.
+remote:        After this operation, 1,882 kB of additional disk space will be used.
+remote:        Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 alsa-ucm-conf all 1.2.2-1ubuntu0.12 [27.1 kB]
+remote:        Fetched 27.1 kB in 0s (119 kB/s)
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libatk1.0-0
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          libatk1.0-data
+remote:        The following NEW packages will be installed:
+remote:          libatk1.0-0 libatk1.0-data
+remote:        0 upgraded, 2 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/48.5 kB of archives.
+remote:        After this operation, 246 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libatk-bridge2.0-0
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          at-spi2-core libatk1.0-0 libatk1.0-data libatspi2.0-0 libxtst6
+remote:        The following NEW packages will be installed:
+remote:          at-spi2-core libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatspi2.0-0
+remote:          libxtst6
+remote:        0 upgraded, 6 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/232 kB of archives.
+remote:        After this operation, 1,074 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libcairo-gobject2
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        0 upgraded, 0 newly installed, 1 reinstalled, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/17.2 kB of archives.
+remote:        After this operation, 0 B of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libdrm2
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          libdrm-common
+remote:        The following NEW packages will be installed:
+remote:          libdrm-common libdrm2
+remote:        0 upgraded, 2 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 39.5 kB of archives.
+remote:        After this operation, 177 kB of additional disk space will be used.
+remote:        Get:1 http://archive.ubuntu.com/ubuntu focal-security/main amd64 libdrm-common all 2.4.107-8ubuntu1~20.04.2 [5,396 B]
+remote:        Get:2 http://archive.ubuntu.com/ubuntu focal-security/main amd64 libdrm2 amd64 2.4.107-8ubuntu1~20.04.2 [34.1 kB]
+remote:        Fetched 39.5 kB in 0s (126 kB/s)
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libgbm1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          libdrm-common libdrm2 libwayland-server0
+remote:        The following NEW packages will be installed:
+remote:          libdrm-common libdrm2 libgbm1 libwayland-server0
+remote:        0 upgraded, 4 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 29.2 kB/100 kB of archives.
+remote:        After this operation, 433 kB of additional disk space will be used.
+remote:        Get:1 http://archive.ubuntu.com/ubuntu focal-security/main amd64 libgbm1 amd64 21.2.6-0ubuntu0.1~20.04.2 [29.2 kB]
+remote:        Fetched 29.2 kB in 0s (129 kB/s)
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libgconf-2-4
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          gconf-service gconf-service-backend gconf2-common libdbus-glib-1-2
+remote:        The following NEW packages will be installed:
+remote:          gconf-service gconf-service-backend gconf2-common libdbus-glib-1-2
+remote:          libgconf-2-4
+remote:        0 upgraded, 5 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/918 kB of archives.
+remote:        After this operation, 8,309 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libgtk-3-0
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          adwaita-icon-theme at-spi2-core dbus dbus-user-session
+remote:          dconf-gsettings-backend dconf-service dmsetup glib-networking
+remote:          glib-networking-common glib-networking-services gsettings-desktop-schemas
+remote:          gtk-update-icon-cache humanity-icon-theme libapparmor1 libatk-bridge2.0-0
+remote:          libatk1.0-0 libatk1.0-data libatspi2.0-0 libcolord2 libcryptsetup12
+remote:          libdconf1 libdevmapper1.02.1 libepoxy0 libgtk-3-bin libgtk-3-common
+remote:          libip4tc2 libjson-glib-1.0-0 libjson-glib-1.0-common libnss-systemd
+remote:          libpam-systemd libproxy1v5 librest-0.7-0 libsoup-gnome2.4-1 libsoup2.4-1
+remote:          libwayland-client0 libwayland-cursor0 libwayland-egl1 libxcomposite1
+remote:          libxcursor1 libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0
+remote:          libxrandr2 libxtst6 networkd-dispatcher python3-dbus python3-gi systemd
+remote:          systemd-sysv systemd-timesyncd ubuntu-mono xkb-data
+remote:        Suggested packages:
+remote:          colord gvfs iw | wireless-tools python-dbus-doc python3-dbus-dbg
+remote:          systemd-container policykit-1
+remote:        The following NEW packages will be installed:
+remote:          adwaita-icon-theme at-spi2-core dbus dbus-user-session
+remote:          dconf-gsettings-backend dconf-service dmsetup glib-networking
+remote:          glib-networking-common glib-networking-services gsettings-desktop-schemas
+remote:          gtk-update-icon-cache humanity-icon-theme libapparmor1 libatk-bridge2.0-0
+remote:          libatk1.0-0 libatk1.0-data libatspi2.0-0 libcolord2 libcryptsetup12
+remote:          libdconf1 libdevmapper1.02.1 libepoxy0 libgtk-3-0 libgtk-3-bin
+remote:          libgtk-3-common libip4tc2 libjson-glib-1.0-0 libjson-glib-1.0-common
+remote:          libnss-systemd libpam-systemd libproxy1v5 librest-0.7-0 libsoup-gnome2.4-1
+remote:          libsoup2.4-1 libwayland-client0 libwayland-cursor0 libwayland-egl1
+remote:          libxcomposite1 libxcursor1 libxdamage1 libxfixes3 libxi6 libxinerama1
+remote:          libxkbcommon0 libxrandr2 libxtst6 networkd-dispatcher python3-dbus
+remote:          python3-gi systemd systemd-sysv systemd-timesyncd ubuntu-mono xkb-data
+remote:        0 upgraded, 55 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 2,917 kB/14.5 MB of archives.
+remote:        After this operation, 74.2 MB of additional disk space will be used.
+remote:        Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-common all 3.24.20-0ubuntu1.1 [234 kB]
+remote:        Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-0 amd64 3.24.20-0ubuntu1.1 [2,620 kB]
+remote:        Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgtk-3-bin amd64 3.24.20-0ubuntu1.1 [61.9 kB]
+remote:        Fetched 2,917 kB in 1s (3,595 kB/s)
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libnspr4
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libnspr4
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/107 kB of archives.
+remote:        After this operation, 322 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libnss3
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          libnspr4
+remote:        The following NEW packages will be installed:
+remote:          libnspr4 libnss3
+remote:        0 upgraded, 2 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/1,363 kB of archives.
+remote:        After this operation, 4,393 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libx11-xcb1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libx11-xcb1
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/9,372 B of archives.
+remote:        After this operation, 86.0 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxcb-dri3-0
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxcb-dri3-0
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/6,552 B of archives.
+remote:        After this operation, 43.0 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxcomposite1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxcomposite1
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/6,976 B of archives.
+remote:        After this operation, 32.8 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxcursor1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following additional packages will be installed:
+remote:          libxfixes3
+remote:        The following NEW packages will be installed:
+remote:          libxcursor1 libxfixes3
+remote:        0 upgraded, 2 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/31.0 kB of archives.
+remote:        After this operation, 117 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxdamage1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxdamage1
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/6,996 B of archives.
+remote:        After this operation, 31.7 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxfixes3
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxfixes3
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/10.9 kB of archives.
+remote:        After this operation, 48.1 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxi6
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxi6
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/29.9 kB of archives.
+remote:        After this operation, 94.2 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxinerama1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxinerama1
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/6,904 B of archives.
+remote:        After this operation, 33.8 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxrandr2
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxrandr2
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/18.5 kB of archives.
+remote:        After this operation, 70.7 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxshmfence1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxshmfence1
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/5,028 B of archives.
+remote:        After this operation, 22.5 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxss1
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxss1
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/8,140 B of archives.
+remote:        After this operation, 32.8 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for libxtst6
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          libxtst6
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/12.8 kB of archives.
+remote:        After this operation, 45.1 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching .debs for fonts-liberation
+remote:        Reading package lists...
+remote:        Building dependency tree...
+remote:        The following NEW packages will be installed:
+remote:          fonts-liberation
+remote:        0 upgraded, 1 newly installed, 0 to remove and 8 not upgraded.
+remote:        Need to get 0 B/822 kB of archives.
+remote:        After this operation, 2,139 kB of additional disk space will be used.
+remote:        Download complete and in download only mode
+remote: W: --force-yes is deprecated, use one of the options starting with --allow instead.
+remote: -----> Fetching https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+remote: -----> Installing adwaita-icon-theme_3.36.1-2ubuntu0.20.04.2_all.deb
+remote: -----> Installing alsa-topology-conf_1.2.2-1_all.deb
+remote: -----> Installing alsa-ucm-conf_1.2.2-1ubuntu0.11_all.deb
+remote: -----> Installing alsa-ucm-conf_1.2.2-1ubuntu0.12_all.deb
+remote: -----> Installing at-spi2-core_2.36.0-2_amd64.deb
+remote: -----> Installing dbus_1.12.16-2ubuntu2.1_amd64.deb
+remote: -----> Installing dbus-user-session_1.12.16-2ubuntu2.1_amd64.deb
+remote: -----> Installing dconf-gsettings-backend_0.36.0-1_amd64.deb
+remote: -----> Installing dconf-service_0.36.0-1_amd64.deb
+remote: -----> Installing dmsetup_2%3a1.02.167-1ubuntu1_amd64.deb
+remote: -----> Installing fonts-liberation_1%3a1.07.4-11_all.deb
+remote: -----> Installing gconf2-common_3.2.6-6ubuntu1_all.deb
+remote: -----> Installing gconf-service_3.2.6-6ubuntu1_amd64.deb
+remote: -----> Installing gconf-service-backend_3.2.6-6ubuntu1_amd64.deb
+remote: -----> Installing glib-networking_2.64.2-1ubuntu0.1_amd64.deb
+remote: -----> Installing glib-networking-common_2.64.2-1ubuntu0.1_all.deb
+remote: -----> Installing glib-networking-services_2.64.2-1ubuntu0.1_amd64.deb
+remote: -----> Installing google-chrome-stable_current_amd64.deb
+remote: -----> Installing gsettings-desktop-schemas_3.36.0-1ubuntu1_all.deb
+remote: -----> Installing gtk-update-icon-cache_3.24.20-0ubuntu1.1_amd64.deb
+remote: -----> Installing gtk-update-icon-cache_3.24.20-0ubuntu1_amd64.deb
+remote: -----> Installing humanity-icon-theme_0.6.15_all.deb
+remote: -----> Installing libapparmor1_2.13.3-7ubuntu5.1_amd64.deb
+remote: -----> Installing libappindicator1_12.10.1+20.04.20200408.1-0ubuntu1_amd64.deb
+remote: -----> Installing libasound2_1.2.2-2.1ubuntu2.5_amd64.deb
+remote: -----> Installing libasound2-data_1.2.2-2.1ubuntu2.5_all.deb
+remote: -----> Installing libatk1.0-0_2.35.1-1ubuntu2_amd64.deb
+remote: -----> Installing libatk1.0-data_2.35.1-1ubuntu2_all.deb
+remote: -----> Installing libatk-bridge2.0-0_2.34.2-0ubuntu2~20.04.1_amd64.deb
+remote: -----> Installing libatspi2.0-0_2.36.0-2_amd64.deb
+remote: -----> Installing libcairo-gobject2_1.16.0-4ubuntu1_amd64.deb
+remote: -----> Installing libcolord2_1.4.4-2_amd64.deb
+remote: -----> Installing libcryptsetup12_2%3a2.2.2-3ubuntu2.4_amd64.deb
+remote: -----> Installing libdbus-glib-1-2_0.110-5fakssync1_amd64.deb
+remote: -----> Installing libdbusmenu-glib4_16.04.1+18.10.20180917-0ubuntu6_amd64.deb
+remote: -----> Installing libdbusmenu-gtk4_16.04.1+18.10.20180917-0ubuntu6_amd64.deb
+remote: -----> Installing libdconf1_0.36.0-1_amd64.deb
+remote: -----> Installing libdevmapper1.02.1_2%3a1.02.167-1ubuntu1_amd64.deb
+remote: -----> Installing libdrm2_2.4.107-8ubuntu1~20.04.1_amd64.deb
+remote: -----> Installing libdrm2_2.4.107-8ubuntu1~20.04.2_amd64.deb
+remote: -----> Installing libdrm-common_2.4.107-8ubuntu1~20.04.1_all.deb
+remote: -----> Installing libdrm-common_2.4.107-8ubuntu1~20.04.2_all.deb
+remote: -----> Installing libepoxy0_1.5.4-1_amd64.deb
+remote: -----> Installing libgail18_2.24.32-4ubuntu4_amd64.deb
+remote: -----> Installing libgail-common_2.24.32-4ubuntu4_amd64.deb
+remote: -----> Installing libgbm1_21.2.6-0ubuntu0.1~20.04.1_amd64.deb
+remote: -----> Installing libgbm1_21.2.6-0ubuntu0.1~20.04.2_amd64.deb
+remote: -----> Installing libgconf-2-4_3.2.6-6ubuntu1_amd64.deb
+remote: -----> Installing libgtk2.0-0_2.24.32-4ubuntu4_amd64.deb
+remote: -----> Installing libgtk2.0-bin_2.24.32-4ubuntu4_amd64.deb
+remote: -----> Installing libgtk2.0-common_2.24.32-4ubuntu4_all.deb
+remote: -----> Installing libgtk-3-0_3.24.20-0ubuntu1.1_amd64.deb
+remote: -----> Installing libgtk-3-0_3.24.20-0ubuntu1_amd64.deb
+remote: -----> Installing libgtk-3-bin_3.24.20-0ubuntu1.1_amd64.deb
+remote: -----> Installing libgtk-3-bin_3.24.20-0ubuntu1_amd64.deb
+remote: -----> Installing libgtk-3-common_3.24.20-0ubuntu1.1_all.deb
+remote: -----> Installing libgtk-3-common_3.24.20-0ubuntu1_all.deb
+remote: -----> Installing libip4tc2_1.8.4-3ubuntu2_amd64.deb
+remote: -----> Installing libjson-glib-1.0-0_1.4.4-2ubuntu2_amd64.deb
+remote: -----> Installing libjson-glib-1.0-common_1.4.4-2ubuntu2_all.deb
+remote: -----> Installing libnspr4_2%3a4.25-1_amd64.deb
+remote: -----> Installing libnss3_2%3a3.49.1-1ubuntu1.6_amd64.deb
+remote: -----> Installing libnss-systemd_245.4-4ubuntu3.15_amd64.deb
+remote: -----> Installing libpam-systemd_245.4-4ubuntu3.15_amd64.deb
+remote: -----> Installing libproxy1v5_0.4.15-10ubuntu1.2_amd64.deb
+remote: -----> Installing librest-0.7-0_0.8.1-1_amd64.deb
+remote: -----> Installing libsoup2.4-1_2.70.0-1_amd64.deb
+remote: -----> Installing libsoup-gnome2.4-1_2.70.0-1_amd64.deb
+remote: -----> Installing libwayland-client0_1.18.0-1_amd64.deb
+remote: -----> Installing libwayland-cursor0_1.18.0-1_amd64.deb
+remote: -----> Installing libwayland-egl1_1.18.0-1_amd64.deb
+remote: -----> Installing libwayland-server0_1.18.0-1_amd64.deb
+remote: -----> Installing libx11-xcb1_2%3a1.6.9-2ubuntu1.2_amd64.deb
+remote: -----> Installing libxcb-dri3-0_1.14-2_amd64.deb
+remote: -----> Installing libxcomposite1_1%3a0.4.5-1_amd64.deb
+remote: -----> Installing libxcursor1_1%3a1.2.0-2_amd64.deb
+remote: -----> Installing libxdamage1_1%3a1.1.5-2_amd64.deb
+remote: -----> Installing libxfixes3_1%3a5.0.3-2_amd64.deb
+remote: -----> Installing libxi6_2%3a1.7.10-0ubuntu1_amd64.deb
+remote: -----> Installing libxinerama1_2%3a1.1.4-2_amd64.deb
+remote: -----> Installing libxkbcommon0_0.10.0-1_amd64.deb
+remote: -----> Installing libxrandr2_2%3a1.5.2-0ubuntu1_amd64.deb
+remote: -----> Installing libxshmfence1_1.3-1_amd64.deb
+remote: -----> Installing libxss1_1%3a1.2.3-1_amd64.deb
+remote: -----> Installing libxtst6_2%3a1.2.3-1_amd64.deb
+remote: -----> Installing networkd-dispatcher_2.1-2~ubuntu20.04.1_all.deb
+remote: -----> Installing python3-dbus_1.2.16-1build1_amd64.deb
+remote: -----> Installing python3-gi_3.36.0-1_amd64.deb
+remote: -----> Installing systemd_245.4-4ubuntu3.15_amd64.deb
+remote: -----> Installing systemd-sysv_245.4-4ubuntu3.15_amd64.deb
+remote: -----> Installing systemd-timesyncd_245.4-4ubuntu3.15_amd64.deb
+remote: -----> Installing ubuntu-mono_19.04-0ubuntu3_all.deb
+remote: -----> Installing xkb-data_2.29-2_all.deb
+remote: -----> Writing profile script
+remote: -----> Rewrite package-config files
+remote: -----> Creating google-chrome shims
+remote: -----> chromedriver app detected
+remote: -----> Looking up latest chromedriver version...
+remote: -----> Downloading chromedriver v99.0.4844.51...
+remote: Archive:  /tmp/chromedriver.zip
+remote:   inflating: /tmp/build_cd0fbe05/.chromedriver/bin/chromedriver  
+remote: -----> Creating chromedriver export scripts...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote: 
+remote: -----> Compressing...
+remote:        Done: 227.1M
+remote: -----> Launching...
+remote:        Released v13
+remote:        https://selenium-automated-form-bot.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/selenium-automated-form-bot.git
+   d7814f2..4115628  master -> master
+tim@Tim-Macbook-Air-M1 HerokuSeleniumPythonScript %

@@ -1,0 +1,6 @@
+// just paste this inside the heroku repository
+heroku buildpacks:add https://github.com/pyronlaboratory/heroku-integrated-firefox-geckodriver
+git add .
+git push heroku master
+
+

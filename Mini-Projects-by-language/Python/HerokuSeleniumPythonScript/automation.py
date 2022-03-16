@@ -30,9 +30,10 @@ def main():
 def run_script():
     #WebDriverFirefox
     #webDriver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
-
+    
     #webDriverChrome
     webDriver = webdriver.Chrome() #pip install chrome-driver
+    
     webDriver.get("https://docs.google.com/forms/d/e/1FAIpQLSehbbr5-GyNsFi7wWia5kSB3KJA28CoiY7-JznuwBrp54P3QA/viewform")
 
     time.sleep(5)
@@ -49,7 +50,9 @@ def run_script():
     SubmitButton = webDriver.find_element(By.XPATH, '/html/body/div/div[2]/form/div[2]/div/div[3]/div[1]/div[1]/div/span/span')
     SubmitButton.click() #//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/div[2]
 
-    get_confirmation_div_text = webDriver.find_element(By.CSS_SELECTOR, '.freebirdFormviewerViewResponseConfirmationMessage')
+    #get_confirmation_div_text = webDriver.find_element(By.CSS_SELECTOR, '.freebirdFormviewerViewResponseConfirmationMessage') #used to be  
+    get_confirmation_div_text = webDriver.find_element(By.XPATH, '/html/body/div[1]/div[2]/div[1]/div/div[3]')
+
     print(get_confirmation_div_text.text)
     if ((get_confirmation_div_text.text) == "Thank you for not taking a reusable bag! Follow Homewood Recycling on Instagram for more information at https://www.instagram.com/homewoodrecycling/"):
         print("Test was successful. (String matched: Thank you for not taking a reusable bag!...)")
@@ -57,7 +60,7 @@ def run_script():
         print("Test failed. (String didn't match: Thank you for not taking a reusable bag!...) ")
 
     time.sleep(2)
-    webDriver.quit()
+    webDriver.quit() 
 
 
 
